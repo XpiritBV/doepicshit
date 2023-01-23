@@ -14,7 +14,9 @@ runs:
   steps:
     - name: Greet the new Xpiriter
       shell: bash
-      run: echo Hello ${{ inputs.who-to-greet }}.
+      env:
+        WHO_TO_GREET: ${{ inputs.who-to-greet }}
+      run: echo "Hello $WHO_TO_GREET."
     - name: Ascii art logo
       shell: bash 
       run: cat do-epic-shit.txt      
