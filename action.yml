@@ -1,6 +1,9 @@
 name: 'Do Epic Shit at Xpirit'
 description: 'Greet someone'
 author: Xpirit
+branding:
+  icon: alert-circle
+  color: orange
 inputs:
   who-to-greet:  # id of input
     description: 'Who to greet'
