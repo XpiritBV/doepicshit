@@ -1,0 +1,24 @@
+name: 'Do Epic Shit at Xpirit'
+description: 'Greet someone'
+author: Xpirit
+inputs:
+  who-to-greet:  # id of input
+    description: 'Who to greet'
+    required: true
+    default: 'World'
+runs:
+  using: "composite"
+  steps:
+    - name: Greet the new Xpiriter
+      shell: bash
+      run: echo Hello ${{ inputs.who-to-greet }}.
+    - name: Ascii art logo
+      shell: bash 
+      run: cat do-epic-shit.txt      
+    - name: Send output to the job summary
+      shell: bash
+      run: |
+        echo "What is Epic for you? Discover it at Xpirit!" >> $GITHUB_STEP_SUMMARY
+        echo "Follow the link: [Do epic shit at Xpirit](https://xpirit.com/dna/)." >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "![Do epic shit logo](https://raw.githubusercontent.com/XpiritBV/doepicshit/main/Xpirit-DoEpicShit-White.jpg)" >> $GITHUB_STEP_SUMMARY
