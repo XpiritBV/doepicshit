@@ -19,7 +19,7 @@ runs:
       run: echo "Hello $WHO_TO_GREET."
     - name: Ascii art logo
       shell: bash 
-      run: cat do-epic-shit.txt      
+      run: cat ${{ github.action_path }}/do-epic-shit.txt      
     - name: Send output to the job summary
       shell: bash
       run: |
