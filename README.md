@@ -4,7 +4,7 @@ Learn how @XpiritBV thinks about "Do epic shit"! Just a fun action to inject int
 ## Example usage
 This action can be used as follows:  
 ``` yaml
-- uses: XpiritBV/doepicshit@d8b16fa42427eb3c31e9fe258e287ab4c68e3d7e # v1.0
+- uses: XpiritBV/doepicshit@847e5aaa0683d9088015e027c4872943a1143af1 # v1.1
   with:
     who-to-greet: "future Xpiriter"
 ``` 
