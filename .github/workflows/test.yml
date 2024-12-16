@@ -9,4 +9,4 @@ jobs:
 
       - uses: ./
         with:
-          who-to-greet: "future Xpiriter"
+          who-to-greet: "future Xebian"
