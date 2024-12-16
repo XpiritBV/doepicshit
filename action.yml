@@ -1,6 +1,6 @@
-name: 'Do Epic Shit at Xpirit'
+name: 'Do Epic Shit at Xebia'
 description: 'Greet someone'
-author: 'Xpirit'
+author: 'Xebia'
 branding:
   icon: 'alert-circle'
   color: orange
@@ -12,7 +12,7 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - name: Greet the new Xpiriter
+    - name: Greet the new Xebian
       shell: bash
       env:
         WHO_TO_GREET: ${{ inputs.who-to-greet }}
@@ -23,7 +23,7 @@ runs:
     - name: Send output to the job summary
       shell: bash
       run: |
-        echo "What is Epic for you? Discover it at Xpirit!" >> $GITHUB_STEP_SUMMARY
-        echo "Follow the link: [Do epic shit at Xpirit](https://xpirit.com/dna/)." >> $GITHUB_STEP_SUMMARY
+        echo "What is Epic for you? Discover it at Xebia!" >> $GITHUB_STEP_SUMMARY
+        echo "Follow the link: [Do epic shit at Xebia](https://xebia.com/careers/)." >> $GITHUB_STEP_SUMMARY
         echo "" >> $GITHUB_STEP_SUMMARY
         echo "![Do epic shit logo](https://raw.githubusercontent.com/XpiritBV/doepicshit/main/Xpirit-DoEpicShit-White.jpg)" >> $GITHUB_STEP_SUMMARY
